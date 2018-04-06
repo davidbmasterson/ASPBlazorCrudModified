@@ -51,6 +51,7 @@ else
                         <td>
                             <span style="display:@HideOnEditing(todo.ID);">@todo.Item</span>
                             <input style="display:@ShowOnEditing(todo.ID);" @bind(todo.Item) />
+                            @*<input  @bind(todo.Item) style="display:@ShowOnEditing(todo.ID);"/>*@
                         </td>
                         <td>
                             <button  style="display:@HideOnEditing(todo.ID);"  class="btn btn-primary" @onclick(() => EditToDo(todo))>Edit</button>
